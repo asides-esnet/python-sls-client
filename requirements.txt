@@ -1,0 +1,4 @@
+IPy==0.81
+YURL==0.13
+futures==2.2.0
+requests==2.5.1
