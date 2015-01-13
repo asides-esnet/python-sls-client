@@ -22,7 +22,8 @@ setup(
         "IPy",
         "YURL",
         "futures",
-        "requests"
+        "requests",
+        "voluptuous"
     ],
     zip_safe=False,
     classifiers=[
