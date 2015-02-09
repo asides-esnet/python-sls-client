@@ -4,7 +4,7 @@ from setuptools import setup
 from setuptools import find_packages
 
 setup(
-    name="python-sls-client",
+    name="sls-client",
     version="1.0",
     description="A python client for the Simple Lookup Service",
     long_description=open("README.rst").read(),
@@ -21,6 +21,7 @@ setup(
     install_requires=[
         "IPy",
         "YURL",
+        "isodate",
         "futures",
         "requests",
         "voluptuous"

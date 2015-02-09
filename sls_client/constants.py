@@ -1,28 +1,37 @@
-import records
+"""import records
 
 # Record types
 RECORD_TYPES = {
-    "host": records.Host
-    "interface": records.Interface
-    "person": records.Person
+    "host": records.Host,
+    "interface": records.Interface,
+    "person": records.Person,
     "service": records.Service
-}
+}"""
 
-# Record keys
+# Record Keys
 LS_KEY_TYPE = "type"
 LS_KEY_EXPIRES = "expires"
 LS_KEY_TTL = "ttl"
 LS_KEY_URI = "uri"
 LS_KEY_STATE = "state"
 
-# Operator keys
+#Type Values
+LS_VALUE_TYPE_SERVICE = "service"
+LS_VALUE_TYPE_HOST = "host"
+LS_VALUE_TYPE_INTERFACE = "interface"
+LS_VALUE_TYPE_PERSON = "person"
+
+#State Values
+LS_VALUE_STATE = ["registered", "renewed", "deleted", "expired"]
+
+# Operator Keys
 LS_KEY_OPERATOR = "operator"
 LS_KEY_OPERATOR_SUFFIX = "-operator"
 
-# Group keys
-LS_KEY_GROUP_DOMAINS = "group-domains"
+# Operator Values
+LS_VALUES_OPERATOR = ["any", "all"]
 
-# Location keys
+# Location Keys
 LS_KEY_LOCATION_SITENAME = "location-sitename"
 LS_KEY_LOCATION_CITY = "location-city"
 LS_KEY_LOCATION_REGION = "location-region"
@@ -31,6 +40,18 @@ LS_KEY_LOCATION_COUNTRY = "location-country"
 LS_KEY_LOCATION_CODE = "location-code"
 LS_KEY_LOCATION_LATITUDE = "location-latitude"
 LS_KEY_LOCATION_LONGITUDE = "location-longitude"
+
+# Group Keys
+LS_KEY_GROUP_COMMUNITIES = "group-communities"
+LS_KEY_GROUP_DOMAINS = "group-domains"
+
+# Service Keys
+LS_KEY_SERVICE_NAME = "service-name"
+LS_KEY_SERVICE_TYPE = "service-type"
+LS_KEY_SERVICE_VERSION = "service-version"
+LS_KEY_SERVICE_HOST = "service-host"
+LS_KEY_SERVICE_LOCATOR = "service-locator"
+LS_KEY_SERVICE_ADMINISTRATORS = "service-administrators"
 
 # Host Keys
 LS_KEY_HOST_NAME = "host-name"
@@ -61,16 +82,8 @@ LS_KEY_INTERFACE_CAPACITY = "interface-capacity"
 LS_KEY_INTERFACE_MAC = "interface-mac"
 LS_KEY_INTERFACE_MTU = "interface-mtu"
 
-# Person keys
+# Person Keys
 LS_KEY_PERSON_NAME = "person-name"
 LS_KEY_PERSON_EMAILS = "person-emails"
 LS_KEY_PERSON_PHONENUMBERS = "person-phonenumbers"
 LS_KEY_PERSON_ORGANIZATION = "person-organization"
-
-# Service keys
-LS_KEY_SERVICE_NAME = "service-name"
-LS_KEY_SERVICE_TYPE = "service-type"
-LS_KEY_SERVICE_VERSION = "service-version"
-LS_KEY_SERVICE_HOST = "service-host"
-LS_KEY_SERVICE_LOCATOR = "service-locator"
-LS_KEY_SERVICE_ADMINISTRATORS = "service-administrators"
